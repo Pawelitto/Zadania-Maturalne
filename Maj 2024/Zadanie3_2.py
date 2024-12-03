@@ -26,7 +26,7 @@ def nieparzysty_skrot(n):
         n //= 10
     return m
 
-with open("Dane-NF-2405/skrot_przyklad.txt", "r") as file:
+with open("Dane-NF-2405/skrot.txt", "r") as file:
     numbers = [int(line) for line in file.readlines()]
 
 combined_numbers = [number for number in numbers if nieparzysty_skrot(number) == 0]
