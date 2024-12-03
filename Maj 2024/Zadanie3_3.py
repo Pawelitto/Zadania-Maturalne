@@ -30,7 +30,7 @@ def nwd(a, b):
         a, b = b, a % b
     return a
 
-with open("Dane-NF-2405/skrot2_przyklad.txt", "r") as file:
+with open("Dane-NF-2405/skrot2.txt", "r") as file:
     numbers = [int(line) for line in file.readlines()]
 
 combined_numbers = [number for number in numbers if nwd(nieparzysty_skrot(number), number) == 7]
